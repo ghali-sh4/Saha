@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvRestaurantMenuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRestaurantMeals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnAddMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Meal ➕"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+    <Button
+        android:id="@+id/btnViewOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Orders 📦"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
